@@ -1,0 +1,9 @@
+name: "repository-codeql-config"
+
+queries:
+  - uses: security-extended
+  - uses: security-and-quality
+
+paths-ignore:
+  - node_modules
+  - "**/*.md"

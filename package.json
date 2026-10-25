@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "jsonwebtoken": "github:auth0/node-jsonwebtoken"
+  },
+  "devDependencies": {
+    "vercel": "^65.2.0"
   }
 }

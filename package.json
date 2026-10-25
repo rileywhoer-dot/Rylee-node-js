@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "jsonwebtoken": "github:auth0/node-jsonwebtoken"
+    "jsonwebtoken": "9.0.2"
   }
 }

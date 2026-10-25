@@ -1,0 +1,17 @@
+{
+  "name": "rylee-node-js",
+  "version": "1.0.0",
+  "description": "Rylee Node.js repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rileywhoer-dot/Rylee-node-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0"
+}

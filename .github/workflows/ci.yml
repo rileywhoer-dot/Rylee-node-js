@@ -16,6 +16,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Block QL/CodeQL artifacts
+        run: |
+          if find . -type f \( -name "*.ql" -o -name "*.qls" \) | grep -q .; then
+            echo "QL files are not allowed in this repository."
+            exit 1
+          fi
+          if grep -RInE "(^|[^a-zA-Z])codeql([^a-zA-Z]|$)|github/codeql-action" --exclude="ci.yml" .github package.json package-lock.json 2>/dev/null | grep -q .; then
+            echo "CodeQL references are not allowed in workflow or package manifests."
+            exit 1
+          fi
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

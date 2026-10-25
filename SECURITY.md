@@ -1,17 +1,40 @@
 # Security Policy
 
+## Scope
+
+This repository enforces a strict security posture for all code, workflows, and contributions.
+
 ## Supported Versions
 
-This project is in early development. Security fixes are applied to the default branch.
+Security fixes are applied to the default branch.
+
+## Prohibited Content
+
+The following are not allowed in this repository:
+- Malware, viruses, worms, trojans, ransomware, spyware, cryptominers, or backdoors
+- Obfuscated or intentionally hidden payloads
+- Unauthorized remote-execution logic or data exfiltration behavior
+- Suspicious encoded payloads (including QR/encoded content intended to hide executable or malicious behavior)
+
+Any contribution containing prohibited content will be rejected and may be reported.
+
+## Secure Contribution Requirements
+
+All contributions should:
+- Use minimal required permissions and least-privilege defaults
+- Avoid committing secrets, tokens, credentials, or private keys
+- Keep dependencies pinned and sourced from trusted registries
+- Include security rationale for workflow or permission changes
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability, please report it privately by opening a private security advisory on GitHub for this repository.
+Do not open public issues for security vulnerabilities.
 
-Please include:
+Report privately using a GitHub private security advisory for this repository. Include:
 - A clear description of the issue
 - Steps to reproduce
 - Potential impact
-- Any suggested mitigation
+- Affected files/components
+- Suggested mitigation or patch
 
-Do not disclose vulnerabilities publicly until a fix is available.
+Please allow reasonable time for investigation and remediation before public disclosure.

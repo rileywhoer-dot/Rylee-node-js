@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "start": "node -e \"console.log('Application start placeholder')\""
+  },
   "dependencies": {
     "jsonwebtoken": "9.0.2"
   }

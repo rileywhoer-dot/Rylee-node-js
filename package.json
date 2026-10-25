@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "jsonwebtoken": "github:auth0/node-jsonwebtoken"
-  }
-}
